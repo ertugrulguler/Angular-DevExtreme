@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "devextreme-deneme": {
@@ -50,6 +50,10 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/devextreme/dist/css/dx.common.css",
+              "src/themes/generated/theme.base.css",
+              "src/themes/generated/theme.additional.css",
+              "src/dx-styles.scss",
               "src/styles.scss"
             ],
             "scripts": []
@@ -73,8 +77,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
+                  "maximumWarning": "4mb",
+                  "maximumError": "6mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -145,6 +149,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "devextreme-deneme"
+    }
+  },
+  "defaultProject": "devextreme-deneme",
+  "cli": {
+    "analytics": "28354470-a76a-4a78-9bb5-b07ce561f37d"
+  }
 }
